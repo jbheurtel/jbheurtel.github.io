@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+        <style>
+
+            body {
+                font-family: arial,sans-serif;
+            }
+            #grid {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns: 225px auto 225px;
+                margin-left: 20px;
+                grid-template-rows: 150px auto 150px;
+            }
+            .inputbox {
+                border-radius: 50px;
+                width: 500px;
+                margin: auto;
+                height: 30px;
+                padding: 7px;
+                border: solid #F2F3F4 1px;
+                border-color: LightGray;
+            }
+
+            .inputbox:hover {
+                box-shadow: 0 0 2px gray
+            }
+            #inputtext {
+                border-color: transparent;
+                vertical-align: top;
+                width: 425px;
+                height:25px;
+                padding-bottom: -3px;
+                margin-left: 5px;
+                font-size: 16px;
+            }
+                #inputtext:focus {
+                    outline: none;
+                }
+            
+            #image {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            #icon {
+                width: 15px;
+                margin-left: 10px;
+                margin-top: 8px;
+                fill: gray; 
+            }
+            #button {
+                background-color: #F2F3F4;
+                color: gray;
+                margin: 30px 0px 5px 5px;
+                width: 150px;
+                height: 35px;
+                border-radius: 3px;
+                border-width: 1px;
+                border-color: transparent;
+
+            }
+                #button:hover {
+                    border-color: gray;
+                    box-shadow: 0 0 2px gray;
+
+            }
+            .buttons {
+                text-align: center;
+            }
+            .tabs {
+                text-align: right;
+            }
+                .tabs a {
+                    font-size: small;
+                    margin-right: 4px;
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .tabs a:hover {
+                    text-decoration: underline;
+                }
+
+            .grid-idem {
+                text-align: center;
+            }
+
+            .page-bottom {
+                height: 30px;
+                background-color: #F2F3F4;
+                margin: 0;
+                width: 100%;
+                padding-left: 20px;
+                padding-top: 12px;
+                color: dimgray;
+                font-size: 14px;
+            }
+            #pb-1 {
+                border-bottom: solid lightgray 1px;
+            }
+            #pb-2 div {
+                margin-right: 15px;
+            }
+
+            #pb-2 #left {
+                float: left;
+            }
+            #pb-2 #right {
+                float: right;
+            }
+
+            #pb-2 a {
+                margin-right: 20px;
+                text-decoration: none;
+                color: dimgray;
+            }
+            #pb-2 a:hover {
+                margin-right: 20px;
+                text-decoration: underline;
+                color: dimgray;
+            }
+            .language {
+                margin-top: 15px;
+                font-size: 13px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+        <div class="Search">
+
+
+            <form action="https://google.com/search">
+                <div id="grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+
+                    <div class="tabs">
+                        <a href="index.html">Google</a>
+                        <a href="images.html">Images</a>
+                        <a href="advanced.html">Advanced Search</a>
+                    </div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item">
+
+                        <a href="https://www.google.com/">
+                            <div id="image">
+                                <embed id="logo" src="google-logo.png" width="275" />
+                            </div>
+                        </a>
+
+                        <div class="inputbox">
+                            <embed src="mag_glass_gray.png" id="icon">
+                            <input id="inputtext" type="text" name="q">
+                        </div>
+
+                        <div class="buttons">
+                            <input id="button" type="submit" value="Google Search">
+                            <input id="button" type="submit" value="I'm feeling lucky" form="&btnI">
+                        </div>
+
+                        <div class="language">
+                            Google offered in:  <a href="https://www.google.com/setprefs?sig=0_4cUPSNgvYFcxyESm_24oAW6qAH4%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwiH1pSQssDrAhVLyoUKHTF-BLsQ2ZgBCA8">Français</a>
+                        </div>
+                    </div>
+
+                    <div class="grid-item"></div>
+
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </form>
+
+            <div class="page-bottom" id="pb-1"> 
+                France
+            </div>
+
+            <div class="page-bottom" id="pb-2">
+                <div id="left">
+                    <a href="https://ads.google.com/">Advertising</a>
+                    <a href="https://www.google.com/services">Business</a> 
+                    <a href="https://about.google/">About</a> 
+                    <a href="https://www.google.com/search/howsearchworks">How Search Works</a>
+                </div>
+
+                <div id="right">
+                    <a href="https://support.google.com/websearch?p=fr_consumer_info&hl=en-FR&fg=1">Consumer Information</a>
+                    <a href="https://policies.google.com/privacy?hl=en-FR&fg=1">Privacy</a>
+                    <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Terms</a>
+                    <a href="https://www.google.com/preferences?hl=en">Settings</a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
